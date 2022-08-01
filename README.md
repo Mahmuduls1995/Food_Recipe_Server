@@ -3,10 +3,10 @@
   <h1 align="center">Food Recipe</h1>
 </div>
 
-<h2>Do you any interesting Food?</h2>
+<h2>Do you any interesting FoodRecipe?</h2>
 <h2>Don't wait! Go and post it on: </h2>
 
-## About Memories:
+## About Food Recipe:
 Food Recipe is an Web Application where individuals can post their daily interesting Food Ingredients. It's a social platform where people can enjoy, share, read, like or dislike the stories of their friends and other people from all around the world.
 
 Backend API:
@@ -32,7 +32,6 @@ npm start
       Local:            http://localhost:3000 
       webpack compiled successfully
 #### Step 6) Open Browser and go to http://localhost:3000
-#### Step 7) Open Memories-Backend Directory in Command Prompt and run the following command:
 ```
 npm i
 ```
@@ -49,10 +48,6 @@ npm start
 #### Note: At this point the App that you are running on your local machine is using online deployed API of our Backend to change that go into src/api/index.js and change the URL to the http://localhost:5000/posts, this line should look like:
 ```
 const url = "http://localhost:5000/posts";
-```
-instead of: 
-```
-const url = "posts";
 ```
 ***
 

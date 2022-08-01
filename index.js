@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
 // Connecting to MongoDB
 // Details of Cluster:
-// Cluster Name: memories-db
+
 
 const port = process.env.PORT || 5000;
 
