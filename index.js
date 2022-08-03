@@ -31,7 +31,9 @@ app.get('/', (req, res) => {
 const port = process.env.PORT || 5000;
 
 // Using Mongoose to Connect to the our Database
-mongoose.connect(process.env.CONNECTION__URL, { useNewURLParser: true, useUnifiedTopology: true })
+
+const uri=`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.ly5tw.mongodb.net/?retryWrites=true&w=majority`
+mongoose.connect(uri, { useNewURLParser: true, useUnifiedTopology: true })
         .then(() => app.listen(port, () => console.log(`Server Running Successfully on port: ${port}`)) )
         .catch((error) => console.log(error.message));
 
